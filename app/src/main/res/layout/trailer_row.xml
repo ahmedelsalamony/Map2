@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+
+    >
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+         android:layout_weight="1"
+        >
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:paddingRight="20dp"
+            >
+
+            <TextView
+                android:id="@+id/fixed"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="تعديل"
+                android:layout_gravity="center_vertical|right"
+                android:drawableRight="@drawable/add"
+                android:textColor="@color/MainColor"
+                android:drawablePadding="3dp"
+
+                />
+            <TextView
+                android:id="@+id/delet"
+                android:drawableRight="@drawable/add"
+                android:text="حذف"
+                android:layout_marginTop="8dp"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:textColor="@color/MainColor"
+                android:drawablePadding="3dp"
+
+
+                />
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+
+    <TextView
+
+        android:id="@+id/video_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|right"
+        android:textAlignment="gravity"
+
+
+         />
+        <TextView
+            android:id="@+id/video_name1"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+
+            android:textAlignment="gravity"
+
+            />
+            </LinearLayout>
+        </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/myContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+
+        style="?android:attr/progressBarStyleSmall"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"/>
+    <ImageView
+
+        android:id="@+id/img"
+        android:src="@drawable/ic_no_user"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+
+        android:scaleType="centerCrop" />
+
+
+</RelativeLayout>
+
+
+
+</LinearLayout>

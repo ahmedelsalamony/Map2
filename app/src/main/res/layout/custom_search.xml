@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/imgtext1"
+        android:textSize="18dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="اختر طريقة البحث"
+        android:layout_marginRight="5dp"
+        android:textColor="@color/MainColor"/>
+
+    <LinearLayout
+        android:layout_marginTop="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/MainColor"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+
+                android:id="@+id/s_AdvSort"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+                app:ms_alignLabels="false"
+                app:ms_arrowColor="@color/MainColor"
+                app:ms_arrowSize="16dp"
+                app:ms_baseColor="@color/MainColor"
+                app:ms_enableErrorLabel="false"
+                app:ms_enableFloatingLabel="false"
+                app:ms_floatingLabelColor="@color/floating_label"
+                app:ms_floatingLabelText="floating label"
+                app:ms_highlightColor="@color/MainColor"
+                app:ms_hint="نوع الاعلان"
+                app:ms_hintColor="@color/MainColor"
+                app:ms_multiline="false"
+                app:ms_thickness="0dp" />
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:id="@+id/s_Advtype"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+
+                app:ms_alignLabels="false"
+                app:ms_arrowColor="@color/MainColor"
+                app:ms_arrowSize="16dp"
+                app:ms_baseColor="@color/MainColor"
+                app:ms_enableErrorLabel="false"
+                app:ms_enableFloatingLabel="false"
+                app:ms_errorColor="@color/MainColor"
+                app:ms_floatingLabelColor="@color/floating_label"
+                app:ms_floatingLabelText="floating label"
+                app:ms_highlightColor="@color/MainColor"
+                app:ms_hint="الحالة"
+                app:ms_hintColor="@color/MainColor"
+                app:ms_multiline="false"
+                app:ms_thickness="0dp" />
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:id="@+id/cityspinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+
+                app:ms_alignLabels="false"
+                app:ms_arrowColor="@color/MainColor"
+                app:ms_arrowSize="16dp"
+                app:ms_baseColor="@color/MainColor"
+                app:ms_enableErrorLabel="false"
+                app:ms_enableFloatingLabel="false"
+                app:ms_errorColor="@color/MainColor"
+                app:ms_floatingLabelColor="@color/floating_label"
+                app:ms_floatingLabelText="floating label"
+                app:ms_highlightColor="@color/MainColor"
+                app:ms_hint="المحافظة"
+                app:ms_hintColor="@color/MainColor"
+                app:ms_multiline="false"
+                app:ms_thickness="0dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/button"
+                android:inputType="numberDecimal"
+                android:padding="1dp"
+                android:textColor="#fff" />
+
+            <TextView
+                android:id="@+id/texprict"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.1"
+                android:gravity="center"
+                android:text="الى"
+                android:textColor="@color/MainColor" />
+
+            <EditText
+                android:id="@+id/fromp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/button"
+                android:inputType="numberDecimal"
+                android:padding="1dp"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:textColor="#fff" />
+
+            <TextView
+                android:id="@+id/texpricef"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.1"
+                android:gravity="center"
+                android:text="من"
+                android:textColor="@color/MainColor" />
+
+            <TextView
+                android:id="@+id/texprice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.1"
+                android:text="السعر"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp">
+
+            <EditText
+
+                android:id="@+id/top1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/button"
+                android:inputType="numberDecimal"
+                android:padding="1dp"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:textColor="#fff" />
+
+            <TextView
+                android:id="@+id/texprict1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.1"
+                android:gravity="center"
+                android:text="الى"
+                android:textColor="@color/MainColor" />
+
+            <EditText
+                android:id="@+id/fromp1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/button"
+                android:inputType="numberDecimal"
+                android:padding="1dp"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:textColor="#fff" />
+
+            <TextView
+                android:id="@+id/texpricef1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.1"
+                android:gravity="center"
+                android:text="من"
+                android:textColor="@color/MainColor" />
+
+            <TextView
+                android:id="@+id/textare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.1"
+                android:text="المساحة"
+
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/dialogButtonOK"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button"
+            android:text="بـــــحــــــــــــــــث"
+            android:textColor="#fff" />
+    </LinearLayout></LinearLayout>
+</RelativeLayout>
