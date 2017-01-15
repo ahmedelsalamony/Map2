@@ -105,10 +105,6 @@ public class Add_advert extends AppCompatActivity implements NavigationView.OnNa
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_advert);
-       /* getSupportActionBar().setDisplayUseLogoEnabled(true);
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setIcon(R.drawable.logo);
-        getSupportActionBar().setTitle(Html.fromHtml("<strong>عقـــــاري </strong>"));*/
         button = Typeface.createFromAsset(getAssets(), "fonts/DroidKufi-Bold.ttf");
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -214,21 +210,7 @@ public class Add_advert extends AppCompatActivity implements NavigationView.OnNa
         }
 
 ///////////////////////////////////////////////////////////////////////////
-      /*  try {
-            //AIzaSyCP2xAsu8C1pMAxjCKYs3hWuKSqTXAz-SM
-         //   GoogleAPI.setHttpReferrer("https://www.googleapis.com/language/translate/v2?key=AIzaSyCP2xAsu8C1pMAxjCKYs3hWuKSqTXAz-SM&q=hello%20world&source=en&target=de");
 
-            // Replace key with the Google Translate API key
-            GoogleAPI.setHttpReferrer("http://android-er.blogspot.com/");
-            GoogleAPI.setKey("AIzaSyBISHD0Kc1ffFbw2to8Y_dalXeb0Kpqn20");
-
-            String InputString="car";
-            System.out.println("sososo"+ Translate.DEFAULT.execute(InputString,
-                    Language.ENGLISH, Language.ARABIC));
-        } catch (Exception ex) {
-            ex.printStackTrace();
-           // OutputString = "Error";
-        }*/
 
         head = (TextView) findViewById(R.id.head);
         ask = (TextView) findViewById(R.id.ask);

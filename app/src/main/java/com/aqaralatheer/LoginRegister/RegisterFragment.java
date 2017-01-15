@@ -229,7 +229,7 @@ public class RegisterFragment extends Fragment {
                         intent.putExtra("add", 1);
                         intent.putExtra("map",0);
                         startActivity(intent);
-
+                        getActivity().finish();
                     }
                     else if(response.getInt("code") == 0 && response.getString("choose").equals("0"))
                     {
@@ -246,6 +246,7 @@ public class RegisterFragment extends Fragment {
                         editor.commit();
                         Intent intent = new Intent(getActivity().getApplication(), Edit.class);
                         startActivity(intent);
+                        getActivity().finish();
                         Toast.makeText(getActivity().getApplicationContext(),"تم التعديل بنجاح", Toast.LENGTH_LONG).show();
 
                     } else if(response.getInt("code") == 0 && response.getString("choose").equals("2"))

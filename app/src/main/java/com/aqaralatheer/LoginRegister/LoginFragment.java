@@ -161,6 +161,7 @@ public class LoginFragment extends Fragment {
                         intent.putExtra("add", 1);
                         intent.putExtra("map",0);
                         startActivity(intent);
+                        getActivity().finish();
 
                     }
                     else {

@@ -183,32 +183,6 @@ public class DetailMainAct extends AppCompatActivity implements BaseSliderView.O
         TypefaceButton();
 
     }
-    /*
-    private void setupActionBar() {
-        ActionBar mActionBar = getActionBar();
-//        mActionBar.setDisplayShowHomeEnabled(false);
-       // mActionBar.setDisplayShowTitleEnabled(false);
-        LayoutInflater mInflater = LayoutInflater.from(this);
-
-        View mCustomView = mInflater.inflate(R.layout.customaction, null);
-        TextView mTitleTextView = (TextView) mCustomView.findViewById(R.id.title_text);
-        mTitleTextView.setText("My Own Title");
-
-        ImageButton imageButton = (ImageButton) mCustomView
-                .findViewById(R.id.imageButton);
-        imageButton.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "Refresh Clicked!",
-                        Toast.LENGTH_LONG).show();
-            }
-        });
-
-        mActionBar.setCustomView(mCustomView);
-        mActionBar.setDisplayShowCustomEnabled(true);
-    }
-*/
 
     //change font style
     private void TypefaceButton() {

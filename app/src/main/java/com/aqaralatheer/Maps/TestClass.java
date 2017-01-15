@@ -141,7 +141,7 @@ public class TestClass extends FragmentActivity
             LocationServices.FusedLocationApi
                     .requestLocationUpdates(mGoogleApiClient, mLocationRequest,
                             (com.google.android.gms.location.LocationListener)
-                                    getApplicationContext());
+                                   TestClass.this );
 
         } else {
             handleNewLocation(location);
